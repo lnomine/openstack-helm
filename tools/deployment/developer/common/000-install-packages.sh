@@ -24,4 +24,8 @@ sudo apt-get install --no-install-recommends -y \
         curl \
         uuid-runtime \
         bc \
-        python3-pip
+        python3-pip \
+        wget \
+        sudo \
+        gnupg2 \
+        software-properties-common
