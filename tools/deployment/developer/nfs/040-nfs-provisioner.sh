@@ -22,6 +22,7 @@ make -C ${HELM_CHART_ROOT_PATH} nfs-provisioner
 #NOTE: Deploy command
 : ${OSH_INFRA_PATH:="../openstack-helm-infra"}
 helm upgrade --install nfs-provisioner ${OSH_INFRA_PATH}/nfs-provisioner \
+    --create-namespace \
     --namespace=nfs \
     --set storageclass.name=general \
     ${OSH_EXTRA_HELM_ARGS_NFS_PROVISIONER}
