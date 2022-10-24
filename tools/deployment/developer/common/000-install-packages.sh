@@ -28,4 +28,5 @@ sudo apt-get install --no-install-recommends -y \
         wget \
         sudo \
         gnupg2 \
+        net-tools \
         software-properties-common
